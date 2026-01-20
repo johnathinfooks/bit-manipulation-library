@@ -14,13 +14,7 @@ void integer_binary(int* output_buff, int output_buff_size, int input)
 // binary to integer translation
 void binary_integer(int* output_buff, int* input_buff, int input_buff_size)
 {
-    for (int i = input_buff_size - 1; i >= 0; i--)
-    {
-        if (input_buff[i] == 1) {
-            // NOTE: Dont really want bit shifting operators in a bit shifting library :p
-            *output_buff |= 1 << (input_buff_size - 1 - i);
-        }
-    }
+    // translations and stuff
 }
 
 // binary to hexadecimal translation
