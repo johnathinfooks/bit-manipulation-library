@@ -6,4 +6,5 @@ A simple bit manipulation library to learn how to do computation with bits. Does
 - No complex bit manipulation operations; only mathematical operations
 - Managing a stream of bits; stream array input stream array output ordered properly
 # Features
-- Translate integer to binary
+- Translate from decimal to binary
+- Bit shifting
