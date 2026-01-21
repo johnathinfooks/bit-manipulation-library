@@ -24,5 +24,3 @@ void binary_hexadecimal(int* output_buff, int output_buff_size, int* input_buff,
     // evaluate the numerical value of those 4 digits between 0 and 15 (base 16)
     // assign a hexadecimal "bit" value depending on
 }
-
-// TODO: add bitwise operator functions and implement them instead of using the features of the language.
