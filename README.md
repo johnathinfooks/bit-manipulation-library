@@ -6,7 +6,7 @@ A simple bit manipulation library to learn how to do computation with bits. Does
 - No complex bit manipulation operations; only mathematical operations
 - Managing a stream of bits; stream array input stream array output ordered properly
 # Features
-- Translate from decimal to binary
+- Decimal to binary translation
 - Bit shifting
 # Return Values
 Functions return 0 upon success. Functions return -1 upon input/output size correlation failure. Functions return 1 upon error.
