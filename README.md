@@ -13,6 +13,7 @@ A simple bit manipulation library to learn how to do computation with bits. Does
 - Flip bits / NOT
 - AND
 - OR
+- XOR
 ### Mathematics
 - Addition
 ## Return Values
