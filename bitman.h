@@ -34,7 +34,7 @@ void bin_dec();
 int shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 /**
- * @breif Shifts bits in input n amount of spaces right.
+ * @brief Shifts bits in input n amount of spaces right.
  * @param in_b Input array of bits to be shifted.
  * @param size_in_b Length of input array.
  * @param out_b Output array of bits.
@@ -45,14 +45,47 @@ int shift_l(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amou
 int shift_r(int* in_b, int size_in_b, int* out_b, int size_out_b, int shift_amount);
 
 /**
- * @breif Flips all the bits in input array.
+ * @brief Flips all the bits in input array.
  * @param in_b Input array of bits to be flipped.
  * @param size_in_b Length of input array.
  * @param out_b Output array of flipped bits.
  * @param size_out_b Length of output array.
  * @return 0 upon success, -1 upon size correlation failure, 1 upon failure.
  */
-int inverse(int* in_b, int size_in_b, int* out_b, int size_out_b);
+int NOT(int* in_b, int size_in_b, int* out_b, int size_out_b);
+
+/**
+ * @brief The AND operator outputs a value if both inputs are that value; for index i, if input1[i] equals input2[i], output[i] = either of the inputs. Else, otuput[i] = 0.
+ * @param in1_b Array input one.
+ * @param size_in1_b Length of array input one.
+ * @param in2_b Array input two.
+ * @param size_in2_b Length of array input two.
+ * @param out_b Output array of bits after AND operation on in1_b and in2_b.
+ * @param size_out_b Length of output array.
+ */
+int AND(int* in1_b, int size_in1_b, int* in2_b, int size_in2_b, int* out_b, int size_out_b);
+
+/**
+ * @brief The OR operator outputs 1 if either inputs are one; for index i, if input1[i] or input2[i] equals 1, output[i] = 1. Else, otuput[i] = 0.
+ * @param in1_b Array input one.
+ * @param size_in1_b Length of array input one.
+ * @param in2_b Array input two.
+ * @param size_in2_b Length of array input two.
+ * @param out_b Output array of bits after OR operation on in1_b and in2_b.
+ * @param size_out_b Length of output array.
+ */
+int OR(int* in1_b, int size_in1_b, int* in2_b, int size_in2_b, int* out_b, int size_out_b);
+
+/**
+ * @brief The XOR operator outputs 1 if either inputs are one and if inputs are not equal to eachother; for index i, if input1[i] or input2[i] equals 1 and input1[i] does not equal input2[i], output[i] = 1. Else, otuput[i] = 0.
+ * @param in1_b Array input one.
+ * @param size_in1_b Length of array input one.
+ * @param in2_b Array input two.
+ * @param size_in2_b Length of array input two.
+ * @param out_b Output array of bits after XOR operation on in1_b and in2_b.
+ * @param size_out_b Length of output array.
+ */
+int XOR(int* in1_b, int size_in1_b, int* in2_b, int size_in2_b, int* out_b, int size_out_b);
 
 // MATH
 

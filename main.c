@@ -7,11 +7,11 @@
 
 int main()
 {
-    int in[BITCOUNT] = {0, 0, 0, 0, 0, 1, 0, 0};
-    // int mod[BITCOUNT] = {0, 0, 0, 0, 0, 0, 1, 0};
+    int in[BITCOUNT] = {0, 0, 0, 0, 0, 1, 0, 1};
+    int mod[BITCOUNT] = {1, 0, 0, 0, 0, 0, 1, 1};
     int out[BITCOUNT];
 
-    int res = shift_l(in, BITCOUNT, out, BITCOUNT, 5);
+    int res = XOR(in, BITCOUNT, mod, BITCOUNT, out, BITCOUNT);
 
     switch (res)
     {
@@ -25,10 +25,10 @@ int main()
     }
     printf("\n");
 
-    // for (int i = 0; i < BITCOUNT; i++) {
-    //     printf("%d", mod[i]);
-    // }
-    // printf("\n");
+    for (int i = 0; i < BITCOUNT; i++) {
+        printf("%d", mod[i]);
+    }
+    printf("\n");
 
 
     for (int i = 0; i < BITCOUNT; i++) {
